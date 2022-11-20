@@ -8,14 +8,14 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-
+env:
+  solution_name: TodoApi\TodoApi.sln
+  solution_folder: TodoApi
 jobs:
   build:
 
     runs-on: ubuntu-latest
-    env:
-      solution_name: TodoApi\TodoApi.sln
-      solution_folder: TodoApi
+
     steps:
     - uses: actions/checkout@v3
     - name: Setup .NET
