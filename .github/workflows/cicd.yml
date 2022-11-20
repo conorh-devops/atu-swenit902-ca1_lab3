@@ -60,10 +60,17 @@ jobs:
           app-name: 'atu-swen-app-3-dev'
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           package: .
+
+  integration_tests:
+    runs-on: ubuntu-latest
+    needs: deploydev
+    steps:
+      - name: Create annotation for build error
+        run: echo "Running integration tests"
   
   deployprod:
     runs-on: ubuntu-latest
-    needs: deploydev
+    needs: integration_tests
     environment:
       name: 'production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}

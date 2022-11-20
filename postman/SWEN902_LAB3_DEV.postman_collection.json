@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "33cf2caa-ccd3-4752-a43d-ecec8ec4be93",
+		"name": "SWEN902_LAB3_DEV",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23944722"
+	},
+	"item": [
+		{
+			"name": "POST_NEWITEM",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\":\"walk dog\",\r\n  \"isComplete\":true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://atu-swen-app-3-dev.azurewebsites.net/api/TodoItems",
+					"protocol": "https",
+					"host": [
+						"atu-swen-app-3-dev",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"TodoItems"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT_ITEM",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 1,\r\n  \"name\": \"feed fish\",\r\n  \"isComplete\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://atu-swen-app-3-dev.azurewebsites.net/api/TodoItems/1",
+					"protocol": "https",
+					"host": [
+						"atu-swen-app-3-dev",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"TodoItems",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE_ITEMBYID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 1,\r\n  \"name\": \"feed fish\",\r\n  \"isComplete\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://atu-swen-app-3-dev.azurewebsites.net/api/TodoItems/1",
+					"protocol": "https",
+					"host": [
+						"atu-swen-app-3-dev",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"TodoItems",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET_ALLTODOITEMS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://atu-swen-app-3-dev.azurewebsites.net/api/TodoItems",
+					"protocol": "https",
+					"host": [
+						"atu-swen-app-3-dev",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"TodoItems"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET_TODOITEMBYID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://atu-swen-app-3-dev.azurewebsites.net/api/TodoItems/1",
+					"protocol": "https",
+					"host": [
+						"atu-swen-app-3-dev",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"TodoItems",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
