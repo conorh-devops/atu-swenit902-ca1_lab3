@@ -1,0 +1,19 @@
+Microsoft (2022) Use continuous integration. Available at: https://learn.microsoft.com/en-us/devops/develop/what-is-continuous-integration (Accessed 20 November 2022)
+
+Rehkopf, M (2022) Continuous integration tools. Available at: https://www.atlassian.com/continuous-delivery/continuous-integration/tools (Accessed 20 November 2022)
+
+Github (2022) About continuous integration. Available at: https://docs.github.com/en/actions/automating-builds-and-tests/about-continuous-integration (Accessed 20 November 2022)
+
+Anderson, R and Dykstra, T (2022) Tutorial: Create a minimal web API with ASP.NET Core. Available at: https://learn.microsoft.com/en-us/aspnet/core/tutorials/min-web-api?view=aspnetcore-7.0&tabs=visual-studio (Accessed 19 November 2022)
+
+Github (2022) Building and testing .NET. Available at: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net (Accessed 20 November 2022)
+
+Github (2022) Encrypted Secrets. Available at: https://docs.github.com/en/actions/security-guides/encrypted-secrets (Accessed 20 November 2022)
+
+Github (2022) Using environments for deployment. Available at: https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment (Accessed 20 November 2022)
+
+Postman (2022) Creating an API. Available at: https://learning.postman.com/docs/designing-and-developing-your-api/creating-an-api/ (Accessed 20 November 2022)
+
+Postman (2022) Github Actions. Available at: https://learning.postman.com/docs/integrations/available-integrations/ci-integrations/github-actions/#configuring-the-postman-cli-for-github-actions (Accessed 20 November 2022)
+
+Grasberger, M (2022) CircleCI vs. GitHub Actions: CI/CD platform comparison Availble at: https://www.techtarget.com/searchsoftwarequality/tip/CircleCI-vs-GitHub-Actions-CI-CD-platform-comparison (Accessed 20 November 2022)
