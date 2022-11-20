@@ -25,6 +25,10 @@ jobs:
       - name: Build with dotnet
         run: dotnet build --configuration Release
         working-directory: TodoApi
+      
+      - name: Test with dotnet
+        run: dotnet test
+        working-directory: TodoApi
 
       - name: dotnet publish
         run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/todoapi
@@ -54,7 +58,6 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'atu-swen-app-3-dev'
-          slot-name: 'development'
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           package: .
   
@@ -76,6 +79,5 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'atu-swen-app-3-dev'
-          slot-name: 'production'
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           package: .
