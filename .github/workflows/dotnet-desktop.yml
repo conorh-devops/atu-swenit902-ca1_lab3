@@ -57,9 +57,9 @@ jobs:
 
     env:
       Solution_Name: TodoAPI                         # Replace with your solution name, i.e. MyWpfApp.sln.
-      Test_Project_Path: TodoAPI.Tests\TodoAPI.Test.csproj                 # Replace with the path to your test project, i.e. MyWpfApp.Tests\MyWpfApp.Tests.csproj.
-      Wap_Project_Directory: Todo.API.Package    # Replace with the Wap project directory relative to the solution, i.e. MyWpfApp.Package.
-      Wap_Project_Path: Todo.API.Package\Todo.API.Package.wapproj                   # Replace with the path to your Wap project, i.e. MyWpf.App.Package\MyWpfApp.Package.wapproj.
+      Test_Project_Path: TodoAPI\TodoAPI.Tests\TodoAPI.Test.csproj                 # Replace with the path to your test project, i.e. MyWpfApp.Tests\MyWpfApp.Tests.csproj.
+      Wap_Project_Directory: TodoAPI\Todo.API.Package    # Replace with the Wap project directory relative to the solution, i.e. MyWpfApp.Package.
+      Wap_Project_Path: TodoAPI\Todo.API.Package\Todo.API.Package.wapproj                   # Replace with the path to your Wap project, i.e. MyWpf.App.Package\MyWpfApp.Package.wapproj.
 
     steps:
     - name: Checkout
