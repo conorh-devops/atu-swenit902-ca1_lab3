@@ -35,5 +35,35 @@ namespace TodoAPI.Tests
             Assert.Equal("Hello World!", response);
         }
 
+        public async Task TestRootEndpoint1()
+        {
+            await using var application = new WebApplicationFactory<Program>();
+            using var client = application.CreateClient();
+
+            var response = await client.GetStringAsync("/");
+            Assert.Equal("Hello World!", response);
+        }
+
+        [Fact]
+        public async Task TestCreateItem1()
+        {
+            await using var application = new WebApplicationFactory<Program>();
+            using var client = application.CreateClient();
+
+            var response = await client.GetStringAsync("/");
+            Assert.Equal("Hello World!", response);
+        }
+
+
+        [Fact]
+        public async Task TestCreateItem3()
+        {
+            await using var application = new WebApplicationFactory<Program>();
+            using var client = application.CreateClient();
+
+            var response = await client.GetStringAsync("/");
+            Assert.Equal("Hello World!", response);
+        }
+
     }
 }
