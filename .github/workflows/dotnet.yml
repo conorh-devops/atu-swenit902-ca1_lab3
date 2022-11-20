@@ -24,10 +24,10 @@ jobs:
         dotnet-version: 7.0.x
     - name: Restore dependencies
       run: dotnet restore
-      working-directory: TodoApi
+      working-directory: $solution_folder
     - name: Build
       run: dotnet build --no-restore
-      working-directory: TodoApi
+      working-directory: $solution_folder
     - name: Test
       run: dotnet test --no-build --verbosity normal
-      working-directory: TodoApi
+      working-directory: $solution_folder
