@@ -10,8 +10,8 @@
 name: Build and deploy ASP.Net Core app to an Azure Web App
 
 env:
-  AZURE_WEBAPP_NAME: TodoApi   # set this to your application's name
-  AZURE_WEBAPP_PACKAGE_PATH: '.'      # set this to the path to your web app project, defaults to the repository root
+  AZURE_WEBAPP_NAME: atu-swen-app-3   # set this to your application's name
+  AZURE_WEBAPP_PACKAGE_PATH: 'TodoApi.'      # set this to the path to your web app project, defaults to the repository root
   DOTNET_VERSION: '7'                 # set this to the .NET Core version to use
 
 on:
@@ -43,16 +43,18 @@ jobs:
 
       - name: Build with dotnet
         run: dotnet build --configuration Release
+        working-directory: TodoApi
 
       - name: dotnet publish
-        run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
+        run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/TodoApi
+        working-directory: TodoApi
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
 
         with:
           name: .net-app
-          path: ${{env.DOTNET_ROOT}}/myapp
+          path: ${{env.DOTNET_ROOT}}/TodoApi
 
   deploy:
     runs-on: ubuntu-latest
